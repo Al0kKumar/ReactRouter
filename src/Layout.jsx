@@ -5,13 +5,16 @@ import Footer from './components/footer/footer'
 import {Outlet} from 'react-router-dom'
 
 
+/* its for the above header & lower footer 
+   will be fixed ,only in b/w UI will change 
+   for any change in routes
+*/
+
 function Layout() {
   return (
     <>
     <Header/>
-    <Outlet/> // its for the above header & lower
-      // willbe fixed ,only in b/w ui will change 
-      // for any change in routes
+    <Outlet/> 
     <Footer/>  
     </>
   )
